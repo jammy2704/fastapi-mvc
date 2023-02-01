@@ -2,10 +2,12 @@
 
 default port is 80
 
-Please find the openapi doc at http://localhost/docs
+Please find the openapi doc at http://localhost/docs .
+
+The postman collection is available at [collection](Gogolook.postman_collection.json).
 
 ## Unit test
-Just type ```pytest``` under app/
+Just type ```pytest```
 
 ```
 (gogolook) jimmyhuang@windows:~/gogolook_task$ pytest -vv
