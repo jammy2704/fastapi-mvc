@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "9f6a6bde-13d2-48e4-b471-6a511b04ce73",
+		"name": "Gogolook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2189355"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"買晚餐\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tasks",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"買早餐\",\r\n  \"status\": 1,\r\n  \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tasks",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
