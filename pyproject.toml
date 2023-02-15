@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-mvc"
+version = "0.1.0"
+description = ""
+authors = ["Jimmy Huang <jammy1128@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi-mvc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.90.0"
+loguru = "^0.6.0"
+sqlalchemy = "^2.0.3"
+uvicorn = "^0.20.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^23.1.0"
+httpx = "^0.23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

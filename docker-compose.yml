@@ -1,8 +1,8 @@
 version: "3.7"
 services: 
-  gogolook_task:
-    container_name: gogolook
-    image: gogolook
+  fastapi-mvc:
+    container_name: fastapi-mvc
+    image: fastapi-mvc
     build: .
     ports:     
       - 80:80
